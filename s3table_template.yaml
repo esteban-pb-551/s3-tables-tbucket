@@ -1,0 +1,91 @@
+table_name: world_cup_data
+namespace: soccer_tournaments
+
+fields:
+  - name: forecast_timestamp
+    type: string
+    required: true
+
+  - name: team
+    type: string
+    required: true
+
+  - name: group
+    type: string
+    required: true
+
+  - name: spi
+    type: double
+    description: Soccer Power Index rating
+
+  - name: global_o
+    type: double
+    description: Global offensive rating
+
+  - name: global_d
+    type: double
+    description: Global defensive rating
+
+  - name: sim_wins
+    type: double
+    description: Simulated number of wins
+
+  - name: sim_ties
+    type: double
+    description: Simulated number of ties
+
+  - name: sim_losses
+    type: double
+    description: Simulated number of losses
+
+  - name: sim_goal_diff
+    type: double
+    description: Simulated goal differential
+
+  - name: goals_scored
+    type: double
+    description: Actual goals scored
+
+  - name: goals_against
+    type: double
+    description: Actual goals conceded
+
+  - name: group_1
+    type: double
+    description: Indicator for finishing first in group
+
+  - name: group_2
+    type: double
+    description: Indicator for finishing second in group
+
+  - name: group_3
+    type: double
+    description: Indicator for finishing third in group
+
+  - name: group_4
+    type: double
+    description: Indicator for finishing fourth in group
+
+  - name: make_round_of_16
+    type: double
+    description: Indicator for reaching round of 16
+
+  - name: make_quarters
+    type: double
+    description: Indicator for reaching quarter-finals
+
+  - name: make_semis
+    type: double
+    description: Indicator for reaching semi-finals
+
+  - name: make_final
+    type: double
+    description: Indicator for reaching the final
+
+  - name: win_league
+    type: double
+    description: Indicator for winning the tournament
+
+  - name: timestamp
+    type: string
+    description: Record update timestamp
